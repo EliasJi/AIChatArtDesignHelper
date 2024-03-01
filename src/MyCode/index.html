@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Person selector: this contains buttons for user to select whether to chat as John or Jane -->
+
+    <div class="chat-container">
+      <h2 class="chat-header">Think More...</h2>
+
+      <div class="chat-messages">
+        <div class="message green-bg">
+        <div class="message-sender">ChatGPT</div>
+        <div class="message-text">Hi, Let's get started</div>
+        <div class="message-timestamp">0w0</div>
+        </div>
+      </div>
+
+      <form class="chat-input-form">
+        <input type="text" class="chat-input" required placeholder="Type here..." />
+        <button type="submit" class="button send-button">Send</button>
+      </form>
+      <button class="button clear-chat-button">Clear Chat</button>
+      <button class="button draw-image-button">Draw</button>
+      
+      <div class="container">
+        <img id="myImage" src="https://images.deepai.org/art-image/0fd1d3661288456296db1d67cd342e42/one-character-anime-a-celestial-huntress-with-iridesc.jpg" alt=":Loading Image">
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
